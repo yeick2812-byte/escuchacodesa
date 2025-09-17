@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escucha CODESA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Proyecto: Escucha CODESA</h1>
+    <p>Plataforma digital anónima para expresar emociones y promover la convivencia escolar.</p>
+  </header>
+
+  <main>
+    <section class="descripcion">
+      <h2>Descripción del Proyecto</h2>
+      <p>
+        Hemos identificado una problemática emocional que afecta la convivencia escolar:
+        ansiedad, estrés, tristeza, bullying y exclusión. Para enfrentar este reto, proponemos
+        <strong>Escucha CODESA</strong>, una plataforma anónima donde los estudiantes puedan
+        expresar sus emociones libremente y recibir orientación inicial.
+      </p>
+    </section>
+
+    <section class="objetivos">
+      <h2>Objetivos e Impactos</h2>
+      <ul>
+        <li>Mejorar el bienestar emocional y la confianza entre estudiantes.</li>
+        <li>Reducir conflictos y conductas discriminatorias.</li>
+        <li>Fortalecer la cultura escolar basada en respeto e inclusión.</li>
+      </ul>
+    </section>
+
+    <section class="formulario">
+      <h2>Exprésate aquí</h2>
+      <p>Tu mensaje es completamente anónimo y nos ayudará a construir una comunidad más empática.</p>
+      
+      <!-- Truco: el onsubmit evita errores y fuerza redirección -->
+      <form onsubmit="window.location.href='gracias.html'; return false;">
+        <textarea name="mensaje" rows="6" placeholder="Escribe lo que sientes..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Escucha CODESA - Proyecto institucional para la convivencia escolar.</p>
+  </footer>
+</body>
+</html>
