@@ -36,9 +36,10 @@
       <h2>Exprésate aquí</h2>
       <p>Tu mensaje es completamente anónimo y nos ayudará a construir una comunidad más empática.</p>
       
-      <!-- Truco: el onsubmit evita errores y fuerza redirección -->
-      <form onsubmit="window.location.href='gracias.html'; return false;">
+      <form action="https://formspree.io/f/mqadvnpn" method="POST">
         <textarea name="mensaje" rows="6" placeholder="Escribe lo que sientes..." required></textarea>
+        <!-- Redirección automática tras enviar -->
+        <input type="hidden" name="_redirect" value="https://TUPAGINA.vercel.app/gracias.html">
         <button type="submit">Enviar</button>
       </form>
     </section>
@@ -49,3 +50,4 @@
   </footer>
 </body>
 </html>
+
